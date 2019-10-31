@@ -1,0 +1,245 @@
+body{
+    padding:0;
+    margin:0;
+}
+
+/*-------------------CABEZERKA--------------*/
+.titulo{
+    background:rgb(59, 172, 31);
+    width:100%;
+    height:90px;
+    font-size:170%;
+    display:blocK;
+    
+   
+    
+}
+h1{
+    margin-top:10px;
+    color:white;
+    margin-left:0.5%;
+    height:90px;
+    float:left;
+    
+}
+.imgCabeza{
+    width:70px;
+    height:70px;
+    float:left;
+    margin-left:10px;
+}
+
+/*-------------INGRESO DE DATOS------------------------*/
+.ingDatos{
+    width: 20%;
+    height:325px;
+    margin-top:5%;
+    margin-left:-13.5%;;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+    text-align:center;
+    color:white;
+    float:left;
+    display:block;
+    
+}
+.cabeza{
+    background: rgb(59, 172, 31);
+    height: 60px;
+    width: 100%;
+    margin-top:-20px;
+}
+.datos{
+    margin-top:20px;
+    color:rgb(59, 172, 31);
+    text-align:left;
+    margin-left:20%;
+    margin-top:20%;
+    
+}
+#valorX, #valorY{
+    text-align:center;
+    width:65px;
+    border: none;
+    border-bottom:1px solid rgb(124, 235, 97);
+    transition:0.2s;
+}
+#valorY{
+    margin-top:15%;
+}
+#valorX:focus, #valorY:focus{
+    outline:none;
+    border-bottom:1.45px solid rgb(59, 172, 31);
+}
+
+#add{
+    margin-top:10%;
+    margin-left:15%;
+    background:#F1F1F1F1;
+    font-weight: bold;
+    border: solid 1px rgb(59, 172, 31);
+    color: rgb(59, 172, 31);
+    width:100px;
+    height:30px;
+    transition: 0.4s;
+    border-radius:6px;
+}
+#add:hover{
+    background: rgb(59, 172, 31);
+    color:white;
+}
+#add:active{
+    background:#F1F1F1F1;
+    color:rgb(59, 172, 31);
+    
+}
+#add:focus{
+    outline:none;
+}
+
+
+p{
+    float:left;
+    margin-left:4px;
+    margin-bottom:0;
+    color:rgb(59, 172, 31);
+}
+#conteo{
+    font-weight: bold;
+}
+
+/*------------------TABLA----------------------*/
+.tabla{
+    width: 42%;
+    height:325px;
+    margin-top:5%;
+    margin-left:2%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+    text-align:center;
+    color:white;
+    float:left;
+   display:block;
+}
+#genTabla{
+    margin-top:2px;
+    background:#F1F1F1F1;
+    font-weight: bold;
+    border: solid 1px rgb(59, 172, 31);
+    color: rgb(59, 172, 31);
+    width:100px;
+    height:30px;
+    transition: 0.4s;
+    border-radius:6px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+#genTabla:hover{
+    background: rgb(59, 172, 31);
+    color:white;
+}
+#genTabla:active{
+    background:#F1F1F1F1;
+    color:rgb(59, 172, 31);
+    
+}
+#genTabla:focus{
+    outline:none;
+}
+#datosTabla{
+  
+    color: rgb(59, 172, 31);
+}
+table{
+    width:100%;
+}
+th{
+    background:rgb(59, 172, 31);
+    color:white;
+}
+#sumas{
+    float: left;
+    margin-top:5%;
+    color:rgb(59, 172, 31);
+}
+
+
+
+/*--------------------PRONOSTICO--------------------*/
+.prono{
+    width: 24%;
+    height:325px;
+    margin-top:5%;
+    margin-left:2%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+    text-align:center;
+    color:white;
+    float:left;
+   display:block;
+   color:rgb(59, 172, 31);
+}
+
+#respuestas{
+    float: left;
+    text-align:left;
+    margin-left:20%;
+    margin-top:5%;
+    
+    
+}
+#incognitas{
+    float: left;
+    text-align:left;
+    margin-left:20%;
+    margin-top:5%;
+  
+
+}
+#resolver{
+    margin-top:2px;
+    margin-left:auto;
+    margin-right:auto;
+    background:#F1F1F1F1;
+    font-weight: bold;
+    border: solid 1px rgb(59, 172, 31);
+    color: rgb(59, 172, 31);
+    width:100px;
+    height:30px;
+    transition: 0.4s;
+    border-radius:6px;
+    display:block;
+    
+}
+#resolver:hover{
+    background: rgb(59, 172, 31);
+    color:white;
+}
+#resolver:active{
+    background:#F1F1F1F1;
+    color:rgb(59, 172, 31);
+    
+}
+#resolver:focus{
+    outline:none;
+}
+
+#respuestas{
+    text-align:left;
+    width:90%;
+    margin-left:5%;
+}
+
+#incognitas{
+    text-align:left;
+    width:90%;
+    margin-left:5%;
+}
+
+#resultado{
+    float: left;
+    text-align:left;
+    margin-left:20%;
+    margin-top:5%;
+    text-align:left;
+    width:90%;
+    margin-left:5%;
+}

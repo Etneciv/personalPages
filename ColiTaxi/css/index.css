@@ -1,0 +1,109 @@
+/*CAJA FORMULARIO*/
+form{
+    width:340px;
+    height: 400px;
+    margin-left:40px;
+    margin-top:40px;
+    font-size: 22px;
+    border-style: solid;
+    border-color:#3ECE3E;
+    border-width: 1px;
+    box-shadow: 9px 10px 12px -4px rgba(0,0,0,0.28);
+    display: block;
+}
+
+/*CABEZERA*/
+.titulo{
+    background-color:#3ECE3E;
+    width:341px;
+    height:55px;
+    text-align:center;
+}
+
+h2{
+    margin-top:0;
+    color:white;
+    
+}
+
+/*CONTENIDO DEL FORMULARIO*/
+#infoFormulario{
+    color:#3ECE3E;
+    font-size: 20px;
+    width: 100%;
+    height:345px;
+}
+
+label{
+    margin-top:20px;
+    float:left;
+    margin-left:5px;
+}
+#ubicacion, #destino, #tipo{
+    float:left;
+    border:none;
+    border-bottom:1px solid rgb(167, 247, 167);
+    display:block;
+    
+}
+#ubicacion{
+    width:210px;
+    margin-left:10px;
+    margin-top:25px;
+}
+#destino{
+    width:229px;
+    margin-left:10px;
+    margin-top:25px;
+}
+#tipo{
+    width:160px;
+    margin-left:10px;
+    margin-top:25px;
+}
+
+
+#ubicacion:focus, #destino:focus, #tipo:focus{
+    outline:none;
+    border-bottom:1px solid  #3ECE3E;
+    -webkit-transition: 0.2s;
+    
+}
+
+
+#botonUbicacion{
+    background: url(../img/ubicacion.png);
+    background-size: cover;
+    width:25px;
+    height:25px;
+    border:none;
+    float:left;
+    display: block;
+    margin-left:5px;
+    margin-top:20px;
+   
+}
+#botonMapa{
+    background: url(../img/mapa.png);
+    background-size: cover;
+    width:25px;
+    height:25px;
+    border:none;
+    float:left;
+    display: block;
+    margin-left:5px;
+    margin-top:20px;
+
+    
+}
+#botonServicio{
+    background: url(../img/seleccion.png);
+    background-size: cover;
+    width:25px;
+    height:25px;
+    border:none;
+    float:left;
+    display:block;
+    margin-left:5px;
+    margin-top:20px;
+}

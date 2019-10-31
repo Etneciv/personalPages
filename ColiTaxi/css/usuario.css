@@ -1,0 +1,27 @@
+#cajaUsuario{
+    position: absolute;
+    width:150px;
+    height:80px;
+    margin-left:88.5%;
+}
+
+#usuarioOpcion{
+    position: absolute;
+    background:rgb(122, 233, 122);
+    width:150px;
+    height:80px;
+    color:white;
+    float:left;
+    text-align:center;
+}
+
+#usuarioLink, #sesionLink{
+    color:white;
+    text-decoration: none;
+    
+}
+
+#usuarioLink:hover, #sesionLink:hover{
+    text-shadow: -1px 0px 6px white;
+    color:rgb(62, 206, 62);
+}

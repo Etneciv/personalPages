@@ -1,0 +1,55 @@
+/*SCROLL DE SECCIONES */
+div.scrollmenu {
+  background: rgba(255, 255, 255, 0);
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu div {
+    background: rgba(255, 255, 255, 0);
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+  }
+
+/*CAJAS CONTENEDAORAS */
+
+.artBox{
+  background: rgba(0, 0, 0, 0.144);
+}
+
+.cantidad{
+  width:30%;
+}
+
+.btnBuy{
+  background: none;
+  background-image: url(../img/icon/buy.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border:none;
+  height:25px;
+  width:25px;
+}
+.btnBuy:hover{
+  background-image:url(../img/icon/buyHover.png);
+}
+.btnBuy:active{
+  background-image:url(../img/icon/buyAfter.png);
+}
+
+.btnFav{
+  background: none;
+  background-image:url(../img/icon/favorite.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border:none;
+  height:25px;
+  width:25px;
+}
+.btnFav:hover{
+  background-image:url(../img/icon/favHover.png);
+}
+.btnFav:active{
+  background-image:url(../img/icon/favAfter.png);
+}

@@ -1,0 +1,59 @@
+#cajaFormulario{
+    width:350px;
+    height:600px;
+    border-radius:2%;
+    border-style: solid;
+    border-color:#3ECE3E;
+    border-width: 1px;
+    margin-left:10px;
+    margin-top:30px;
+
+}
+
+.tituloRegistro{
+    margin-top:40px;
+}
+#iconT{
+    width:90px;
+    height:90px;
+    float:left;
+    margin-left:45px;
+}
+h2{
+    font-size:35px;
+    float:left;
+    color:#3ECE3E;
+}
+p{
+    font-size: 23px;
+    text-align:center;
+    color: #bababe;
+    margin-left:50px;
+    margin-right:50px;
+}
+
+tx{
+    color:rgb(130, 226, 130);
+    margin-left:30px;
+    margin-top:45px;
+    position: absolute;
+}
+input{
+    width:300px;
+    height: 30px;
+    margin-left:25px;
+    border-style: solid;
+    border-color:rgb(130, 226, 130);
+    border-width: 1px;
+    margin-top:35px;
+    outline: 0;
+
+}
+
+input:focus{
+    transition: 0.12s ease;
+    border-style: solid;
+    border-color:#3ECE3E;
+    border-width: 1.3px;
+    
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ColiTaxis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/cabeza.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/usuario.css">
+
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+    <div id="cabeza">
+        <input type="button" id="botonUsuario" value="">
+        <input type="button" id="botonNotificacion" value="">
+        
+        <div class="principal" onclick="location.href='index.html'">
+            <img id="logo" src="img/logo.png">
+            <h1>ColiTaxis</h1>
+        </div>
+    
+    </div>
+
+    <div id="cajaUsuario"></div>
+    
+    <form id="formulario">
+        <div class="titulo">
+            <h2>Solicitar Servicio</h2>
+        </div>
+        
+        <div id="infoFormulario">
+            <label>Ubicación</label>
+            <input type="text" id="ubicacion">
+            <input type="submit" id="botonUbicacion" value=""><br>
+        
+            <label>Destino</label>
+            <input type="text" id="destino">
+            <input type="submit" id="botonMapa" value=""><br>
+        
+            <label>Tipo de servicio</label>
+            <select id="tipo">
+                <option></option>
+                <option value="Programar">Programar</option>
+                <option value="Solicitar ahora">Solicitar ahora</option>
+                <option value="Cotizar">Cotizar</option>
+            </select><br>
+            <input type="submit" id="botonServicio" value="">
+        </div>
+
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

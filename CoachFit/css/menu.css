@@ -1,0 +1,130 @@
+
+/*-----------------MENU-----------------*/
+
+.menu{
+    margin-top:-45px;
+    margin-left:55px;
+    position: absolute;
+    width:200px;
+    height:420px;
+    background:rgba(0, 0, 0, 0);
+    color:white;
+    border: 1px solid #FFFFFF;
+    transition-duration: 5s;
+    
+}
+
+h2{
+    color:blacK;
+    font-weight: bold;
+}
+.cabezaMenu{
+    width:200px;
+    height:50px;
+    background: #FFFF00;
+    margin-top: -17px;
+    margin-left: -41px;
+    border:1px solid white;
+    text-align: center;
+}
+
+
+.menu li{
+    list-style: none;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top:-30px;
+    font-weight: bold;
+    
+}
+
+#lineM{
+    width:150px;
+    height: 1px;
+    background: #FFFF00;
+    margin-top: 20px;
+    margin-left: -15px;
+    
+    
+}
+
+#imgM1, #imgM2, #imgM3, #imgM4, #imgM5, #imgM6{
+    background-size: cover;
+    width:38px;
+    height:38px;
+    margin-left: -30px;
+    margin-top:10px;
+    cursor: pointer;
+    
+}
+
+#imgM1{
+    background-image: url(../img/menu/gym-before.png);
+}
+#imgM1:hover{
+    background-image: url(../img/menu/gym-after.png);
+}
+#imgM1:hover ~ #txtGym{
+    color: #FFFF00;
+}
+
+
+
+#imgM2{
+    background-image: url(../img/menu/crossfit-before.png);
+}
+#imgM2:hover{
+    background-image: url(../img/menu/crossfit-after.png);
+}
+#imgM2:hover ~ #txtCross{
+    color: #ff0000;
+}
+
+
+
+#imgM3{
+    background-image: url(../img/menu/nutrition-before.png);
+}
+#imgM3:hover{
+    background-image: url(../img/menu/nutrition-after.png);
+}
+#imgM3:hover ~ #txtNutri{
+    color:#00FF51;
+}
+
+
+#imgM4{
+    background-image: url(../img/menu/defence-before.png);
+}
+#imgM4:hover{
+    background-image: url(../img/menu/defence-after.png);
+}
+#imgM4:hover ~ #txtDef{
+    color:#E500FF;
+}
+
+
+
+#imgM5{
+    background-image: url(../img/menu/about-before.png);
+}
+#imgM5:hover{
+    background-image: url(../img/menu/about-after.png);
+}
+#imgM5:hover ~ #txtAcerca{
+    color:#00FCFF;
+}
+
+
+#imgM6{
+    background-image: url(../img/menu/pro-before.png);
+}
+#imgM6:hover{
+    background-image: url(../img/menu/pro-after.png);
+}
+#imgM6:hover ~ #txtPro{
+    background: -webkit-linear-gradient(gray,black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(255, 227, 71);
+}

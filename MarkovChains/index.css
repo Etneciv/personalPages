@@ -1,0 +1,13 @@
+.bg-menu{
+    background-image: linear-gradient(120deg, #8fcff4 0%, #84fa8e 100%);
+}
+.font-menu{
+    font-size:80%;
+}
+.text-shadow{
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.size-bottom{
+    font-size:12px;
+}

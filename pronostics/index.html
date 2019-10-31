@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pronóstico</title>
+    <link rel="stylesheet" href="style.css" >
+    
+</head>
+<body>
+    <div class="titulo" >
+        <h1>Pronóstico</h1>
+        <img src="titulo.png" class="imgCabeza">
+       
+    </div>
+        
+
+    <!--INGRESO DE DATOS-->
+    <article class="ingDatos">
+        <div class="cabeza">
+            <h2>INGRESAR INTERVALO</h2>
+        </div>
+        
+        <div class="datos">
+            Ingrese X:
+            <input type="text"  id="valorX"> <br><br>
+            
+            Ingrese Y:
+            <input type="text" id="valorY"> <br><br>
+
+            <input type="submit" value="Añadir" id="add">
+        </div>
+        <p>Número de intervalos:</p> <p id="conteo"></p>
+    </article>
+
+    <!--TABLA-->
+    <article class="tabla">
+        <input type="button" value="Generar tabla" onclick="genera_tabla()" id="genTabla">
+        <div id="datosTabla"></div>
+        <div id="sumas"></div>
+    </article>
+
+    <!--OBTENCIÓN DE PRONÓSTICO-->
+    <article class="prono">
+        <input type="submit" value="Resolver" id="resolver">
+       
+        <div id="incognitas"></div>
+        <div id="respuestas"></div>
+        <div id="resultado"></div>
+        
+    </article>
+    
+</body>
+
+<script type="text/javascript" src="metMat.js"></script>
+</html>
