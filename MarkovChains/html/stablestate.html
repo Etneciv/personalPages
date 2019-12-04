@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../index.css">
+    <title>OPERATIONS INVESTIGATION - Stable State</title>
+  </head>
+  <body class="bg-menu">
+      <!--MENU-->
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand font-weight-bold text-white" href="#">STABLE STATE</a>
+          <button  class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ml-5 font-weight-bold font-menu">
+              <li class="nav-item dropdown row mx-auto">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="../img/lineal_icon.png"  class="mr-1" height="20px">Linear programming
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Graphic Method</a>
+                  <a class="dropdown-item" href="#">Simplex Method</a>
+                  <a class="dropdown-item" href="#">Sensibility analysis</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Check the Theory!</a>
+                </div>
+              </li>
+              <li class="mx-auto nav-item dropdown row">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="../img/nonlineal_icon.png" class="mr-1" height="20px">Nonlinear programming
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="">Márkov chains</a>
+                  <a class="dropdown-item" href="#">Transition analysis</a>
+                  <a class="dropdown-item" href="stablestate.html">Stable state</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Check the theory!</a>
+                </div>
+              </li>
+              <li class="nav-item row mx-auto">
+                <a class="nav-link disabled" href="#"><img src="../img/work_icon.png" class="mr-1" height="20px">In progress</a>
+              </li>
+              <li class="nav-item row mx-auto">
+                <a class="nav-link active" href="#"><img src="../img/help_icon.png" class="mr-1" height="20px">Help</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
+        <div class="container-fluid mt-5">
+            <!--APPLICATION-->
+            <div class="container pt-5 pb-5">
+                <h4>Solve exercise</h4>
+                <div class="col-10 line" ></div>
+                <div id="markovProblem" class="col-12 row mt-3 ">
+                    <div class="col-lg-4 col-sm-12 row mt-4 mx-auto ">
+                        <p class="mt-1 mx-auto my-auto">Number of events</p>
+                        <select id="numberEv" class=" mx-auto height-pannel my-auto">
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button id="btnAccept" class="btn btn-dark mx-auto height-pannel my-auto">Accept</button>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 mt-4 mx-auto " id="divDiagram"></div>
+                    <div class="col-lg-4 col-sm-12 mt-4 mx-auto ">
+                      <button id="btnSolve" class="btn btn-dark  my-auto height-pannel btn-solve">Solve</button>
+                      <div class="col-12 text-center mt-3" id="divResult"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Theory-->
+            <div class="container mt-5">
+                <h4>Theory: Stable state</h4>
+                <div class="col-12 text-justify mt-5">
+                  <h3 class="mx-auto">INTRODUCCIÓN</h3>
+                  Una vez que se conoce el análisis de transición, en una cadena de
+                  Markov y, si se tiene un determinado número de vueltas, es posible
+                  tener una idea de hacia qué límite tienden a establecerse los valores.
+                  Por lo mismo, en esta parte complementaria se tratará el estado
+                  estable y las formas de obtenerlo.
+                  Para terminar la temática de cadenas de Markov, se habrán de
+                  presentar los casos especiales en dichas cadenas</div>
+
+                  <div class="col-12 text-justify mt-5">
+                    <h3>ESTADO ESTABLE EN PROCESOS DE MARKOV</h3>
+                    Una vez que iniciamos el cálculo de probabilidades de transición,
+                    después de muchos procesos, va a ser notable que, los valores de los
+                    estados van a tender a estabilizarse en ciertos números, esto es: van
+                    a tender a conseguir un estado estable, en donde los valores
+                    numéricos tengan pocos cambios en las siguientes vueltas.
+                    Ahora bien, ¿cómo se obtiene el estado estado estable? Existen dos
+                    maneras de lograrlo: el método de la suma de flujos y las ecuaciones
+                    matriciales.
+                    En el método de la suma de flujos se parte del principio de que todo
+                    lo que entra a un estado es igual a todo lo que sale del mismo. Se
+                    utiliza el diagrama de estado
+                    El procedimiento de resolución marca que, solo se consideren las
+                    flechas o vectores que entran a un estado, así como las que salen de
+                    él. Con lo anterior, se configuran las ecuaciones de la suma de flujos,
+                    mismas que se resuelven por cualquier metodología de sistema de
+                    ecuaciones. Cabe hacer mención que, siempre, se debe añadir la
+                    ecuación de suma 1; además, para el sistema de ecuaciones, una de
+                    las mismas debe ser la que se iguala con 1.
+                  </div>
+
+                  <div class="col-12 text-justify mt-5">
+                    <h3>CONCLUSIÓN</h3>
+                    Las cadenas de Markov son procesos estocásticos, de
+                    probabilidad condicional, que tienen mucha utilidad en
+                    diversas situaciones del mundo real.
+                    Como siempre, para aplicar estos modelos es menester
+                    que se identifiquen las características del problema para
+                    verificar que cumplen con los requisitos pedidos en los
+                    procesos de Markov.
+                  </div>
+
+                  <div class="col-lg-5 col-md-10 mx-auto mt-5">
+                      <h6>Stable state with Solver</h6>
+                      <iframe width="100%" height="243px" src="https://www.youtube-nocookie.com/embed/kJw-34PKzuA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+            </div>
+        </div>
+
+
+
+        <!--BOTTOM-->
+          <div class="container-fluid mt-5 size-bottom bg-dark pt-5 pb-5" >
+            <div class="container row text-white mx-auto">
+                <div class="col-lg-4 col-sm-12 mt-3">
+                  <img src="../img/logo_udc.svg" class="w-100 ">
+                  <h6 class="mt-4">School of Telematics</h6>
+                  <h6>Software engineering</h6>
+                  <h6 class="mt-5">Developers</h6>
+                  <p>José Guadalupe Deniz Mancilla</p>
+                  <p>Fernando Etneciv López Ladino</p>
+                  <div class="d-block d-sm-block d-md-none border" width="100%" height="1px"></div>
+                </div>
+                <div class="d-none d-sm-none d-md-block border" width="1px" height="100%"></div>
+
+                <div class="col-lg-4 col-sm-12 mt-3 mx-auto">
+                  <h5 class="mx-auto">Social networks</h5>
+                  <div class="col-12 mt-4 row">
+                    <img src="../img/fb_icon.png" height="30px" class="mx-auto">
+                    <img src="../img/twitter_icon.png" height="30px"  class="mx-auto">
+                    <img src="../img/gmail_icon.png" height="30px"  class="mx-auto">
+                    <img src="../img/youtube_icon.png" height="30px"  class="mx-auto">
+                  </div>
+                  <div class="d-block d-sm-block d-md-none border mt-4" width="100%" height="1px"></div>
+                </div>
+                <div class="d-none d-sm-none d-md-block border" width="1px" height="100%"></div>
+
+                <div class="col-lg-3 col-sm-12 mt-3">
+                  <p>Copyright 2019 © All rights reserved.</p>
+
+                  <div>
+                    Made with next tools:
+                    <p>Bootstrap 4</p>
+                    <p>HTML 5</p>
+                    <p>JavaScript</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body> 
+  <script src="../js/markov.js"></script>
+</html>
